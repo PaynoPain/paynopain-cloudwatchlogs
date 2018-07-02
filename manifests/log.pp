@@ -10,6 +10,7 @@ define cloudwatchlogs::log (
   } else {
     $log_path = $path
   }
+
   if $log_group_name == undef {
     $real_log_group_name = $name
   } else {

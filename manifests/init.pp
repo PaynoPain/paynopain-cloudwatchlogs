@@ -24,6 +24,7 @@ class cloudwatchlogs (
         warn           => true,
         require        => Package['awslogs'],
       }
+
       concat::fragment { 'awslogs-header':
         target  => '/etc/awslogs/awslogs.conf',
         content => template('cloudwatchlogs/awslogs_header.erb'),
@@ -69,6 +70,7 @@ class cloudwatchlogs (
         warn           => true,
         require        => File['/etc/awslogs'],
       }
+
       concat::fragment { 'awslogs-header':
         target  => '/etc/awslogs/awslogs.conf',
         content => template('cloudwatchlogs/awslogs_header.erb'),
@@ -78,9 +80,11 @@ class cloudwatchlogs (
       file { '/var/awslogs':
         ensure => 'directory',
       }
+
       file { '/var/awslogs/etc':
         ensure => 'directory',
       }
+
       file { '/var/awslogs/etc/awslogs.conf':
         ensure  => 'link',
         target  => '/etc/awslogs/awslogs.conf',
