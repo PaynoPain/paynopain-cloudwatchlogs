@@ -1,6 +1,6 @@
 require 'spec_helper'
-describe 'cloudwatch' do
+describe 'cloudwatchlogs' do
   context 'with default values for all parameters' do
-    it { should contain_class('cloudwatch') }
+    it { should contain_class('cloudwatchlogs') }
   end
 end

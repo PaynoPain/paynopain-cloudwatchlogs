@@ -1,4 +1,4 @@
-define cloudwatch::log (
+define cloudwatchlogs::log (
   $path                     = undef,
   $streamname               = '{instance_id}',
   $datetime_format          = '%b %d %H:%M:%S',

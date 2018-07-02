@@ -1,11 +1,11 @@
 {
-  "name": "paynopain-cloudwatch",
+  "name": "paynopain-cloudwatchlogs",
   "version": "0.1",
   "author": "paynopain",
-  "summary": "Installs AWS Cloudwatch",
+  "summary": "Configure AWS Cloudwatch logs",
   "license": "MIT",
-  "source": "https://github.com/PaynoPain/paynopain-cloudwatch.git",
-  "project_page": "https://github.com/PaynoPain/paynopain-cloudwatch",
+  "source": "https://github.com/PaynoPain/paynopain-cloudwatchlogs.git",
+  "project_page": "https://github.com/PaynoPain/paynopain-cloudwatchlogs",
   "operatingsystem_support": [
     {
       "operatingsystem":"RedHat",
